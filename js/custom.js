@@ -30,7 +30,7 @@ gsap.to(".col-md-4", {
   x: 10,
   duration: 3
 });
-gsap.from("main", {
+gsap.from(".col-md-4", {
   scrollTrigger: {
     trigger: '.col-md-4',
     start: 'top center',
@@ -38,6 +38,22 @@ gsap.from("main", {
   }, 
   opacity: 0.9,
   duration: 3
+});
+gsap.from("#subscribe", {
+  scrollTrigger: {
+    trigger: '#subscribe',
+    start: 'top center',
+  }, 
+  x: '100vw',
+  duration: 0.5
+});
+gsap.from("#countdown", {
+  scrollTrigger: {
+    trigger: '#countdown',
+    start: 'top center',
+  }, 
+  x: '-100vw',
+  duration: 0.5
 });
 
 //COUNTDOWN DATE
@@ -84,7 +100,6 @@ var myfunc = setInterval(function() {
         beforeSend: function() { 
           loading.style.display = "block";
           console.log('test');
-          // console.log(data);
         },
         success: function(message) {
             email.val('');
