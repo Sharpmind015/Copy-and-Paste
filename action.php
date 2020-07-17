@@ -1,9 +1,9 @@
 <?php
 $email = $_POST["email"];
 $servername = "localhost";
-$username = "Akindeji";
-$password = "password";
-$database = "myDB";
+$username = "id14347816_akindeji";
+$password = "7Ay0?76aafLWc7K+";
+$database = "id14347816_localhost";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
 
