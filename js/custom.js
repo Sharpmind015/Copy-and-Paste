@@ -5,7 +5,12 @@ var slider = new Swiper('.swiper-container', {
       992: {
         slidesPerView: 3
       },
-      }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
 })
 
 // Lightbox Initialization
