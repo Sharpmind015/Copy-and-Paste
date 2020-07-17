@@ -21,24 +21,14 @@ tl1.to('.layer', {x: '-100vw', duration: 0.4, stagger: .15, delay: .5})
 .from('.anim', {scaleY: 0, duration: 0.5, ease: Expo.easeOut})
 .from('.btn-primary', {scale: '0', x: '-100px', ease: Power4.easeOut})
 ;
-gsap.to(".col-md-4", {
-  scrollTrigger: {
-    trigger: '.col-md-4',
-    start: 'top center',
-    scrub: 1.2,
-  }, 
-  y: 30,
-  x: 10,
-  duration: 3
-});
 gsap.from(".col-md-4", {
   scrollTrigger: {
-    trigger: '.col-md-4',
+    trigger: '#features',
     start: 'top center',
-    scrub: 1,
   }, 
-  opacity: 0.9,
-  duration: 3
+  opacity: 0,
+  y: 30,
+  duration: 0.6
 });
 gsap.from("#subscribe", {
   scrollTrigger: {
