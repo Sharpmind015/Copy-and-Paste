@@ -17,6 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 tl1.to('.layer', {x: '-100vw', duration: 0.4, stagger: .15, delay: .5})
 .to('.overlay', {x: '-100vw', duration: 0.01})
+.from('.navbar', {x: '100vw', duration: 0.5, ease: Expo.easeOut})
 .from('.anim', {scaleY: 0, duration: 0.5, ease: Expo.easeOut})
 .from('.btn-primary', {scale: '0', x: '-100px', ease: Power4.easeOut})
 ;
