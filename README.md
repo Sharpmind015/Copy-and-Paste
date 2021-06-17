@@ -1,2 +1,2 @@
 # Copy-and-Paste
-Landing page for a make believe company
+Coming soon landing page for a futuristic make believe app.
